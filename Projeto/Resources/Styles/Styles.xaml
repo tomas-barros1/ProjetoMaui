@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<?xaml-comp compile="true" ?>
+<ResourceDictionary 
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
+
+    <Style TargetType="VerticalStackLayout">
+        <Setter Property="HorizontalOptions" Value="Center"/>
+        <Setter Property="VerticalOptions" Value="Center"/>
+        <Setter Property="Padding" Value="20"/>
+        <Setter Property="Margin" Value="30"/>
+        <Setter Property="Spacing" Value="20"/>
+    </Style>
+
+    <Style TargetType="Entry">
+        <Setter Property="TextColor" Value="Black"/>
+        <Setter Property="Margin" Value="10,5"/>
+        <Setter Property="HeightRequest" Value="50"/>
+        <Setter Property="FontFamily" Value="PoppinsRegular" />
+        <Setter Property="HorizontalOptions" Value="Center" />
+        <Setter Property="MinimumWidthRequest" Value="300" />
+
+    </Style>
+
+    <Style TargetType="Button">
+        <Setter Property="TextColor" Value="White"/>
+        <Setter Property="BackgroundColor" Value="Aqua"/>
+        <Setter Property="CornerRadius" Value="10"/>
+        <Setter Property="Margin" Value="0,10,0,10" />
+        <Setter Property="Padding" Value="10"/>
+        <Setter Property="HeightRequest" Value="60" />
+        <Setter Property="WidthRequest" Value="380" />
+        <Setter Property="FontFamily" Value="PoppinsRegular" />
+    </Style>
+
+    <Style TargetType="Label">
+        <Setter Property="TextColor" Value="Black" />
+        <Setter Property="FontFamily" Value="PoppinsRegular" />
+        <Setter Property="HorizontalOptions" Value="Center" />
+        <Setter Property="Margin" Value="0,0,0,10" />
+    </Style>
+
+
+</ResourceDictionary>

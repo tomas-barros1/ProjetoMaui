@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Projeto.FourthPage"
+             Title="Tasks page">
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Color x:Key="PrimaryColor">#50C2C9</Color>
+            <Color x:Key="PrimaryDarkColor">#50C2C9</Color>
+            <Color x:Key="AccentColor">#50C2C9</Color>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+    <Grid RowDefinitions="3*,1*,8*" Padding="10">
+
+        <StackLayout BackgroundColor="Aqua" Grid.Row="0" VerticalOptions="Center" HorizontalOptions="Center" Padding="30" MinimumHeightRequest="200" MinimumWidthRequest="800">
+            <Image Source="user_profile.png" WidthRequest="100" HeightRequest="100" Aspect="AspectFill" 
+               HorizontalOptions="Center" VerticalOptions="Center"
+               Clip="EllipseGeometry" />
+            <Label x:Name="Username" FontAttributes="Bold" FontSize="24" TextColor="White" Margin="10"
+               HorizontalOptions="Center" VerticalOptions="Center"/>
+        </StackLayout>
+
+        <StackLayout Grid.Row="1" Padding="0,10,0,0">
+            <Label Text="Daily Task" FontAttributes="Bold" FontSize="24" TextColor="Black" Margin="25" HorizontalOptions="Start"/>
+        </StackLayout>
+
+        <StackLayout Grid.Row="2" Padding="20">
+            <StackLayout HorizontalOptions="Start" Orientation="Horizontal" Margin="0,10,0,0">
+                <CheckBox CheckedChanged="OnCheckBoxCheckedChanged" Color="Black"/>
+                <Label Text="Learning Programming by 12PM" VerticalOptions="Center" Margin="0"/>
+            </StackLayout>
+
+            <StackLayout HorizontalOptions="Start" Orientation="Horizontal" Margin="0,10,0,0">
+                <CheckBox CheckedChanged="OnCheckBoxCheckedChanged" Color="Black"/>
+                <Label Text="Learn how to cook by 1PM" VerticalOptions="Center" Margin="0"/>
+            </StackLayout>
+
+            <StackLayout HorizontalOptions="Start"  Orientation="Horizontal" Margin="0,10,0,0">
+                <CheckBox CheckedChanged="OnCheckBoxCheckedChanged" Color="Black"/>
+                <Label Text="Learn how to play at 2PM" VerticalOptions="Center" Margin="0"/>
+            </StackLayout>
+
+            <StackLayout HorizontalOptions="Start"  Orientation="Horizontal" Margin="0,10,0,0">
+                <CheckBox CheckedChanged="OnCheckBoxCheckedChanged" Color="Black"/>
+                <Label Text="Have lunch at 4PM" VerticalOptions="Center" Margin="0"/>
+            </StackLayout>
+
+            <StackLayout HorizontalOptions="Start"  Orientation="Horizontal" Margin="0,10,0,0">
+                <CheckBox CheckedChanged="OnCheckBoxCheckedChanged" Color="Black"/>
+                <Label Text="Going to travel 6PM" VerticalOptions="Center" Margin="0"/>
+            </StackLayout>
+        </StackLayout>
+    </Grid>
+
+</ContentPage>

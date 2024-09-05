@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Projeto.ThirdPage"
+             Title="Login page">
+    
+    <VerticalStackLayout>
+        <Label FontSize="32" FontAttributes="Bold" Text="Wellcome back"/>
+        <Image Source="login_img.png" HorizontalOptions="Center" />
+
+        <StackLayout Orientation="Vertical" HorizontalOptions="Center">
+            <Entry x:Name="Email" Placeholder="Enter your email" MinimumWidthRequest="300"/>
+            <Entry x:Name="Password" Placeholder="Enter Password" IsPassword="True" MinimumWidthRequest="300"/>
+        </StackLayout>
+        
+        <Label Text="Forget Password?" TextColor="Aqua" />
+        
+        <Button Clicked="Button_Clicked" Text="Login"/>
+        
+        <StackLayout Orientation="Horizontal">
+            <Label Text="Don't have an account?"/>
+            <Label Text=" Sign up" TextColor="Aqua">
+                <Label.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                </Label.GestureRecognizers>
+            </Label>
+        </StackLayout>
+        
+    </VerticalStackLayout>
+</ContentPage>

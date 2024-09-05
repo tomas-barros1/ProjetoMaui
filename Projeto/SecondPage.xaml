@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Projeto.SecondPage"
+             Title="Register page">
+
+    <VerticalStackLayout HorizontalOptions="Center">
+        <Label Text="Wellcome to Onboard!" FontSize="Title" FontAttributes="Bold"/>   
+        <Label Text="Let's help to meet up your tasks."/>
+
+        
+        <StackLayout Orientation="Vertical" HorizontalOptions="Center">
+            <Entry x:Name="Name" Placeholder="Enter your full name" />
+            <Entry x:Name="Email" Placeholder="Enter your email"/>
+            <Entry x:Name="Password" Placeholder="Enter Password" IsPassword="True"/>
+            <Entry x:Name="ConfirmPassword" Placeholder="Confirm Password" IsPassword="True"/>
+            <Button Clicked="Button_Clicked" Text="Register"/>
+        </StackLayout>
+        
+        <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+            <Label Text="Already have an account?"/>
+            <Label Text=" Sign in" TextColor="Aqua">
+                <Label.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                </Label.GestureRecognizers>
+            </Label>
+        </StackLayout>
+        
+    </VerticalStackLayout>
+</ContentPage>
